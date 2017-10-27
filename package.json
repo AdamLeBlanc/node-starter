@@ -7,7 +7,7 @@
   "author": "Adam LeBlanc",
   "license": "MIT",
   "engines": {
-    "node": ">=8.5.x"
+    "node": ">=8.x.x"
   },
   "scripts": {
     "dev:run": "nodemon --exec babel-node src/index.js",
