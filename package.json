@@ -1,8 +1,7 @@
 {
   "name": "node-starter",
   "version": "0.0.1",
-  "description":
-    "A starter project for node projects using babel for the latest javascript features",
+  "description": "A starter project for node projects using babel for the latest javascript features",
   "main": "index.js",
   "author": "Adam LeBlanc",
   "license": "MIT",
@@ -27,5 +26,6 @@
     "singleQuote": true,
     "trailingComma": "es5",
     "eslintIntegration": true
-  }
+  },
+  "dependencies": {}
 }
