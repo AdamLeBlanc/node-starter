@@ -1,7 +1,8 @@
 {
   "name": "node-starter",
   "version": "0.0.1",
-  "description": "A starter project for node projects using babel for the latest javascript features",
+  "description":
+    "A starter project for node projects using babel for the latest javascript features",
   "main": "index.js",
   "author": "Adam LeBlanc",
   "license": "MIT",
@@ -11,7 +12,9 @@
   "scripts": {
     "dev:run": "nodemon --exec babel-node src/index.js",
     "build": "rm -rf build && babel src --out-dir build --source-maps",
-    "start": "node build/index.js"
+    "start": "node build/index.js",
+    "openssl:gen":
+      "openssl genrsa -des3 -passout pass:x -out server.pass.key 2048 && openssl rsa -passin pass:x -in server.pass.key -out server.key && rm server.pass.key && openssl req -new -key server.key -out server.csr && openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
